@@ -1,0 +1,114 @@
+/**
+    * MOBIFY-scooch
+    */
+    
+  .m-scooch {
+    position: relative;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .m-scooch .m-scooch-inner {
+    position: relative;
+    white-space: nowrap;
+    text-align: left;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -ms-transition-property: -ms-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: cubic-bezier(0.33,.66,.66,1);
+    -moz-transition-timing-function: cubic-bezier(0.33,.66,.66,1);
+    -ms-transition-timing-function: cubic-bezier(0.33,.66,.66,1);
+    -o-transition-timing-function: cubic-bezier(0.33,.66,.66,1);
+    transition-timing-function: cubic-bezier(0.33,.66,.66,1);
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .3s;
+    -ms-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+  }
+
+ .m-scooch.m-fluid>.m-scooch-inner>* {
+    width: 100%;
+  }
+
+  .m-scooch .m-scooch-inner > * {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+    font-size: 1em;
+  }
+
+  .m-scooch .m-item {
+    position: relative;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* line 24, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-controls .prev {
+  display: none;
+}
+
+/* line 27, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-controls .next {
+  display: none;
+}
+
+/* line 31, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-controls {
+  text-align: center;
+  padding: 6px 0;
+  background-color: #FFF;
+}
+
+/* line 37, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-controls a {
+  padding: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: -moz-none;
+  user-drag: none;
+}
+
+/* scooch controls: Bulleted */
+/* line 50, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-bulleted a {
+  line-height: 0;
+  text-decoration: none;
+  text-indent: -999px;
+  overflow: hidden;
+  display: inline-block;
+  padding: 5px;
+  width: 0;
+  height: 0;
+  margin: 0px 4px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #CCC;
+  -moz-border-radius-topleft: 20px;
+  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -webkit-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* line 65, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-bulleted a:hover, .m-scooch-bulleted a:focus {
+  text-decoration: none;
+}
+
+/* line 68, ../../src/sass/components/_mobile-carrosel.scss */
+.m-scooch-bulleted a.m-active {
+  background-color: #1a75ce;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Exemplo de lazyload</title>
+<script>
+  var wm = wm || {};
+  wm.utils = {};
+</script>
+<link rel="stylesheet" href="/assets/css/libs/normalize.css">
+<link rel="stylesheet" href="/assets/css/styles/lazyload.css">
+</head>
+  
+<body>
+<h1>Exemplo de lazyload</h1>
+
+<pre>
+<strong>HTML:</strong>
+&lt;img data-src=&quot;{url}&quot; /&gt;
+
+<strong>Javascript:</strong>
+$("img").unveil();
+</pre>
+
+<ul class="produtos">
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto01.jpg" data-src-retina="/images/produto01-retina.jpg"/>
+    </figure>
+    <span class="title"> Produto 1</span>
+    <span class="price"> R$2.999,00</span>  
+  </li>
+
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto02.jpg" data-src-retina="/images/produto02-retina.jpg"/>
+    </figure>
+    <span class="title"> Produto 2</span>
+    <span class="price"> R$1.999,00</span>   
+  </li>
+
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto03.jpg"/>
+    </figure>
+    <span class="title"> Produto 3</span>
+    <span class="price"> R$1.499,00</span>   
+  </li>
+
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto04.jpg"/>
+    </figure>
+    <span class="title"> Produto 4</span>
+    <span class="price"> R$989,00</span>   
+  </li>
+
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto05.jpg"/>
+    </figure>
+    <span class="title"> Produto 5</span>
+    <span class="price"> R$2.900,00</span>   
+  </li>
+
+  <li>
+    <figure>
+      <img class="lazyload" src="/images/loader.gif" data-src="/images/produto06.jpg"/>
+    </figure>
+    <span class="title"> Produto 6</span>
+    <span class="price"> R$1.799,00</span>   
+  </li>
+</ul>
+
+<p>Veja mais <a href="http://luis-almeida.github.io/unveil/">na página do plugin</a></p>
+
+<script src="/assets/js/libs/zepto.min.js?"></script>
+<script src="/assets/js/lazyload/unveil-lazyloading.js"></script>
+<script>
+  $("img").unveil();
+</script>
+</body>
+</html>

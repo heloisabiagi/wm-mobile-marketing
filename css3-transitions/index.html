@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Exemplo de transição CSS3</title>
+<link rel="stylesheet" href="assets/css/libs/normalize.css">
+<link rel="stylesheet" href="assets/css/styles/base.css">
+</head>
+  
+<body>
+<h1>CSS3 Transitions</h1>
+
+<pre>
+  .item {
+    transition: {propriedade} {tempo em s} {tipo}
+  }
+</pre>
+
+  <ul class="produtos">
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto01.jpg"/>
+        </figure>
+        <span class="title"> Produto 1</span>
+        <span class="price"> R$2.999,00</span>
+        <span class="more"> Ver mais</span>
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div>    
+    </li>
+
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto02.jpg"/>
+        </figure>
+        <span class="title"> Produto 2</span>
+        <span class="price"> R$1.999,00</span>
+        <span class="more"> Ver mais</span>
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div>   
+    </li>
+
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto03.jpg"/>
+        </figure>
+        <span class="title"> Produto 3</span>
+        <span class="price"> R$1.499,00</span>
+        <span class="more"> Ver mais</span>  
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div> 
+    </li>
+
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto04.jpg"/>
+        </figure>
+        <span class="title"> Produto 4</span>
+        <span class="price"> R$989,00</span>
+        <span class="more"> Ver mais</span>   
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div>
+    </li>
+
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto05.jpg"/>
+        </figure>
+        <span class="title"> Produto 5</span>
+        <span class="price"> R$2.900,00</span>
+        <span class="more"> Ver mais</span>
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div>   
+    </li>
+
+    <li>
+      <div class="info-produto">
+        <figure>
+          <img src="images/produto06.jpg"/>
+        </figure>
+        <span class="title"> Produto 6</span>
+        <span class="price"> R$1.799,00</span>
+        <span class="more"> Ver mais</span>
+      </div>
+      <div class="descricao">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare dapibus lectus, sit amet laoreet mauris pulvinar ac. Vivamus feugiat felis quis lacus gravida pulvinar.</p>
+      </div>   
+    </li>
+  </ul>
+
+<script src="assets/js/libs/zepto.min.js"></script>
+<script>
+  $(".more").on("click", function(){
+      var container = $(this).closest("li");
+
+      if(!container.hasClass("active")) {
+        container.addClass("active");
+      } else {
+        container.removeClass("active");
+    }
+  });
+</script>
+</body>
+</html>

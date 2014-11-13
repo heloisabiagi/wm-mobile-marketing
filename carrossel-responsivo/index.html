@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="MobileOptimized" content="320">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no">
+<title>Exemplo de carrossel responsivo</title>
+<link rel="stylesheet" href="assets/css/libs/normalize.css">
+<link rel="stylesheet" href="assets/css/libs/scooch.css">
+<link rel="stylesheet" href="assets/css/styles/base.css">
+</head>
+  
+<body>
+<h1>Carrossel responsivo</h1>
+
+<pre>
+<strong>HTML:</strong>
+&lt;!-- carrossel --&gt;
+&lt;div class=&quot;m-scooch m-fluid m-scooch-photos&quot;&gt;
+  &lt;!-- the slider --&gt;
+  &lt;div class=&quot;m-scooch-inner&quot;&gt;
+    &lt;!-- the items --&gt;
+    &lt;div class=&quot;m-item m-active&quot;&gt;
+      &lt;img src=&quot;image1.jpg&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;m-item&quot;&gt;
+      &lt;img src=&quot;image2.jpg&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;m-item&quot;&gt;
+      &lt;img src=&quot;image3.jpg&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- controles --&gt;
+  &lt;div class=&quot;m-scooch-controls m-scooch-bulleted&quot;&gt;
+    &lt;a href=&quot;#&quot; data-m-slide=&quot;prev&quot;&gt;Previous&lt;/a&gt;
+    &lt;a href=&quot;#&quot; data-m-slide=&quot;1&quot; class=&quot;m-active&quot;&gt;1&lt;/a&gt;
+    &lt;a href=&quot;#&quot; data-m-slide=&quot;2&quot;&gt;2&lt;/a&gt;
+    &lt;a href=&quot;#&quot; data-m-slide=&quot;3&quot;&gt;3&lt;/a&gt;
+    &lt;a href=&quot;#&quot; data-m-slide=&quot;next&quot;&gt;Next&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>Javascript:</strong>
+$('.m-scooch').scooch();
+</pre>
+
+<div class="m-scooch m-fluid">
+  <ul class="produtos m-scooch-inner">
+    <li class="m-item m-active">
+      <figure>
+        <img src="images/produto01.jpg"/>
+      </figure>
+      <span class="title"> Produto 1</span>
+      <span class="price"> R$2.999,00</span>  
+    </li>
+
+    <li class="m-item">
+      <figure>
+        <img src="images/produto02.jpg"/>
+      </figure>
+      <span class="title"> Produto 2</span>
+      <span class="price"> R$1.999,00</span>   
+    </li>
+
+    <li class="m-item">
+      <figure>
+        <img src="images/produto03.jpg"/>
+      </figure>
+      <span class="title"> Produto 3</span>
+      <span class="price"> R$1.499,00</span>   
+    </li>
+
+    <li class="m-item">
+      <figure>
+        <img src="images/produto04.jpg"/>
+      </figure>
+      <span class="title"> Produto 4</span>
+      <span class="price"> R$989,00</span>   
+    </li>
+
+    <li class="m-item">
+      <figure>
+        <img src="images/produto05.jpg"/>
+      </figure>
+      <span class="title"> Produto 5</span>
+      <span class="price"> R$2.900,00</span>   
+    </li>
+
+    <li class="m-item">
+      <figure>
+        <img src="images/produto06.jpg"/>
+      </figure>
+      <span class="title"> Produto 6</span>
+      <span class="price"> R$1.799,00</span>   
+    </li>
+  </ul>
+
+  <div class="m-scooch-controls m-scooch-bulleted">
+    <!-- <a href="#" data-slide="prev">Previous</a> -->
+    <a href="#" data-m-slide="1" class="m-active">1</a>
+    <a href="#" data-m-slide="2">2</a>
+    <a href="#" data-m-slide="3">3</a>
+    <a href="#" data-m-slide="4">4</a>
+    <a href="#" data-m-slide="5">5</a>
+    <a href="#" data-m-slide="6">6</a>
+    <!-- <a href="#" data-slide="next">Next</a> -->
+  </div>
+</div>
+
+<p>Veja mais <a href="https://github.com/mobify/scooch">na página do plugin</a></p>
+
+<script src="assets/js/libs/zepto.min.js"></script>
+<script src="assets/js/scooch/scooch.min.js"></script>
+<script>$('.m-scooch').scooch();</script>
+</body>
+</html>

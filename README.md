@@ -5,7 +5,7 @@ Neste repositório encontram-se exemplos de técnicas utilizadas para melhorar a
 
 - Font Awesome (26.11.2014)
 
-Webfont customizada com ícones de uso cotidiano. Performáticas, é ideal para substituir imagens e sprites.
+Webfont customizada com ícones de uso cotidiano. Performática, é ideal para substituir imagens e sprites.
 
 - Unveil lazyload:
 
